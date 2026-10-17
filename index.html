@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>曹洪雯 — 陪伴女性探索自我成长的心理人</title>
+<meta name="description" content="曹洪雯，壹心理平台联合创始人。多年一对一咨询，陪伴女性走过婚姻危机与亲密关系的关口。你，是你心理世界最主动的建构者。">
+<style>
+  :root {
+    --paper: #FAF6EF;
+    --paper-deep: #F3EDE2;
+    --ink: #2B2620;
+    --ink-soft: #5C544B;
+    --ink-faint: #8A8076;
+    --accent: #9C5B3C;
+    --accent-deep: #7C4529;
+    --line: #E5DCCB;
+    --pending-bg: #FFF3D6;
+    --pending-ink: #8A6D1A;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Noto Sans SC", "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.01em;
+  }
+  .serif { font-family: "Songti SC", "STSong", "Noto Serif SC", "Source Han Serif SC", serif; }
+  .wrap { max-width: 640px; margin: 0 auto; padding: 0 24px; }
+
+  .pending {
+    display: inline-block;
+    font-size: 11px;
+    line-height: 1.5;
+    color: var(--pending-ink);
+    background: var(--pending-bg);
+    border: 1px dashed #D9B84A;
+    border-radius: 4px;
+    padding: 1px 6px;
+    margin-left: 4px;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+
+  /* ---------- Hero：先接住情绪 ---------- */
+  .hero {
+    padding: 72px 0 56px;
+    background:
+      radial-gradient(ellipse 90% 55% at 50% -10%, rgba(156,91,60,0.10), transparent 70%),
+      var(--paper);
+  }
+  .hero-hook {
+    font-size: 24px;
+    line-height: 1.7;
+    letter-spacing: 0.04em;
+    font-weight: 700;
+  }
+  .hero-hook em {
+    font-style: normal;
+    color: var(--accent-deep);
+    border-bottom: 2px solid rgba(156,91,60,0.35);
+  }
+  .hero-calm {
+    margin-top: 22px;
+    color: var(--ink-soft);
+    font-size: 16px;
+  }
+  .hero-who {
+    margin-top: 40px;
+    padding-top: 28px;
+    border-top: 1px solid var(--line);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    text-align: left;
+  }
+  .hero-photo {
+    width: 76px; height: 76px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 28%;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 14px rgba(43,38,32,0.12);
+    flex-shrink: 0;
+  }
+  .hero-name { font-size: 20px; font-weight: 700; letter-spacing: 0.1em; }
+  .hero-role { font-size: 13.5px; color: var(--ink-soft); margin-top: 2px; }
+
+  /* ---------- 通用区块 ---------- */
+  section { padding: 48px 0; }
+  section + section { border-top: 1px solid var(--line); }
+  .sec-label {
+    font-size: 12px;
+    letter-spacing: 0.3em;
+    color: var(--accent);
+    margin-bottom: 10px;
+  }
+  .sec-title {
+    font-size: 23px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  .lead { color: var(--ink-soft); }
+  .lead + .lead { margin-top: 14px; }
+  .lead strong { color: var(--ink); font-weight: 600; }
+
+  /* ---------- 三个关口 ---------- */
+  .gates { display: grid; gap: 14px; margin-top: 6px; }
+  .gate {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(43,38,32,0.04);
+  }
+  .gate .gate-tag {
+    display: inline-block;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    color: var(--accent-deep);
+    border: 1px solid var(--accent);
+    border-radius: 999px;
+    padding: 2px 12px 1px;
+    margin-bottom: 10px;
+  }
+  .gate h3 { font-size: 17px; margin-bottom: 6px; }
+  .gate p { font-size: 14.5px; color: var(--ink-soft); }
+
+  /* ---------- 为什么是我 ---------- */
+  .why-photo {
+    width: 120px; height: 120px;
+    border-radius: 16px;
+    object-fit: cover;
+    object-position: 50% 28%;
+    float: right;
+    margin: 0 0 14px 18px;
+    border: 3px solid #fff;
+    box-shadow: 0 6px 18px rgba(43,38,32,0.12);
+  }
+  .cred {
+    clear: both;
+    margin-top: 20px;
+    background: var(--paper-deep);
+    border-radius: 12px;
+    padding: 14px 18px;
+    font-size: 14px;
+    color: var(--ink-soft);
+  }
+  .cred strong { color: var(--ink); }
+
+  /* ---------- 定调句 ---------- */
+  .motto {
+    text-align: center;
+    padding: 60px 0;
+    background:
+      radial-gradient(ellipse 70% 60% at 50% 50%, rgba(156,91,60,0.08), transparent 75%),
+      var(--paper);
+  }
+  .motto p {
+    font-size: 22px;
+    line-height: 2;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: var(--accent-deep);
+    max-width: 20em;
+    margin: 0 auto;
+  }
+  .motto span { display: block; margin-top: 14px; font-size: 12px; font-weight: 400; color: var(--ink-faint); letter-spacing: 0.1em; }
+
+  /* ---------- 预约 ---------- */
+  .cta-box {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 28px 22px;
+    text-align: center;
+    box-shadow: 0 4px 16px rgba(43,38,32,0.06);
+  }
+  .cta-box h3 { font-size: 19px; letter-spacing: 0.05em; margin-bottom: 10px; }
+  .cta-box p { font-size: 14.5px; color: var(--ink-soft); }
+  .cta-btn {
+    display: inline-block;
+    margin-top: 18px;
+    background: var(--accent);
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 0.15em;
+    padding: 14px 44px;
+    border-radius: 999px;
+  }
+  .cta-note { margin-top: 12px; font-size: 12px; color: var(--ink-faint); }
+
+  footer {
+    padding: 32px 0 52px;
+    text-align: center;
+    font-size: 12px;
+    color: var(--ink-faint);
+    line-height: 2;
+  }
+  footer a { color: var(--ink-faint); }
+
+  @media (min-width: 720px) {
+    .wrap { max-width: 680px; }
+    .hero { padding: 88px 0 64px; }
+    .hero-hook { font-size: 28px; }
+    .gates { grid-template-columns: repeat(3, 1fr); }
+    section { padding: 56px 0; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ 首屏：先接住情绪 ============ -->
+<header class="hero">
+  <div class="wrap">
+    <h1 class="hero-hook serif">
+      "他是真的爱我，<br>还是为了<em>我的钱</em>？"
+    </h1>
+    <p class="hero-calm">
+      如果这个问题在你心里盘旋了很久，却找不到一个能真正说出口的地方——<br>
+      我们可以谈谈。
+    </p>
+    <div class="hero-who">
+      <img class="hero-photo" src="assets/avatar.jpg" alt="曹洪雯">
+      <div>
+        <p class="hero-name serif">曹洪雯</p>
+        <p class="hero-role">陪伴女性探索自我成长的心理人<br>壹心理平台 联合创始人</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ 你也许正站在这样的关口 ============ -->
+<section id="gates">
+  <div class="wrap">
+    <p class="sec-label">也许你正在这里</p>
+    <h2 class="sec-title serif">事业你打得赢，这道题却没有公式</h2>
+    <div class="gates">
+      <div class="gate">
+        <span class="gate-tag">进不进</span>
+        <h3 class="serif">要不要开始这段关系</h3>
+        <p>他出现了，一切看似正好。可你分不清心动和权衡，更分不清他走近的，是你，还是你身后的资源。</p>
+      </div>
+      <div class="gate">
+        <span class="gate-tag">走不走</span>
+        <h3 class="serif">婚姻危机中，离还是不离</h3>
+        <p>继续是消耗，离开是震荡。身边的人都在给建议，却没有一个人真正懂你要权衡的是什么。</p>
+      </div>
+      <div class="gate">
+        <span class="gate-tag">信不信</span>
+        <h3 class="serif">分不清爱与利益</h3>
+        <p>你习惯了在谈判桌上识别意图，唯独在亲密关系里，不敢用自己的判断力。</p>
+      </div>
+    </div>
+    <p class="lead" style="margin-top:20px;">这些年，我陪伴过许多和你处境相似的女性——30 到 50 岁，事业已成或正接手家族事业，在人生的"男性选择"关口，需要一个既懂心理学、又懂她们世界的人。</p>
+  </div>
+</section>
+
+<!-- ============ 为什么是我 ============ -->
+<section id="why">
+  <div class="wrap">
+    <p class="sec-label">为什么是我</p>
+    <h2 class="sec-title serif">我不是隔着书本懂你</h2>
+    <img class="why-photo" src="assets/avatar.jpg" alt="曹洪雯">
+    <p class="lead">我是心理学人，也是创了十余年业的女人<span class="pending">待确认：准确创业年限</span>。谈判、决策、独自扛事的夜晚，我都经历过。<strong>亲密关系里最艰难的那场风暴，我也亲身穿过。</strong></p>
+    <p class="lead">所以当你说"我不知道他是爱我的人，还是爱我的钱"，我接得住——<strong>因为这道题，我自己也做过。</strong></p>
+    <p class="lead">我不会替你做决定。我陪你把情绪和事实分开，把这笔账算清楚，让你重新握住自己人生的决定权。</p>
+    <div class="cred">
+      <p><strong>曹洪雯</strong> · 壹心理平台联合创始人 · 多年一对一咨询经验 · 著有《但我依然有欲望》（女性主体性方向，创作中）· 曾主讲《AI 时代的青少年心理健康服务》等公开演讲</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 定调句 ============ -->
+<div class="motto">
+  <div class="wrap">
+    <p class="serif">你，是你心理世界<br>最主动的建构者。</p>
+    <span>这是我相信的一切的起点</span>
+  </div>
+</div>
+
+<!-- ============ 预约 ============ -->
+<section id="book">
+  <div class="wrap">
+    <p class="sec-label">预约</p>
+    <h2 class="sec-title serif">从一次谈话开始</h2>
+    <div class="cta-box">
+      <h3 class="serif">一对一咨询 · 完全保密</h3>
+      <p>不必准备好再来。带着你此刻的混乱来，就够了。</p>
+      <a class="cta-btn" href="#"><span class="pending" style="margin:0;">待确认：预约方式（微信/表单）</span></a>
+      <p class="cta-note">预约入口将在联系方式确认后开放</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>© 2026 曹洪雯 · 本站内容均为本人自述</p>
+    <p>机构合作与媒体联络<span class="pending">待确认：合作伙伴页（规划中）</span></p>
+  </div>
+</footer>
+
+</body>
+</html>
